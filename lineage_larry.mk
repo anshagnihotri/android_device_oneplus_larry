@@ -15,6 +15,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# AxFx
+TARGET_INCLUDE_AXFX := true
+
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 108, 2, 2
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := Ansh_Agnihotri
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Snapdragon_695_5G
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_larry
 PRODUCT_DEVICE := larry

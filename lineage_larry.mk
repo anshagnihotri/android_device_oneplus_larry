@@ -15,9 +15,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# AxFx
-TARGET_INCLUDE_AXFX := true
-
 # Camera information (multiple sensors supported)
 AXION_CAMERA_REAR_INFO := 108, 2, 2
 AXION_CAMERA_FRONT_INFO := 16

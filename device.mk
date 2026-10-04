@@ -74,3 +74,9 @@ $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/oneplus/larry/larry-vendor.mk)
+
+
+
+# Lunaris Dolby privileged permission allowlist
+PRODUCT_COPY_FILES += \
+    device/oneplus/larry/permissions/privapp-permissions-lunaris-dolby.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lunaris-dolby.xml
